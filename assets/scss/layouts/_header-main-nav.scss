@@ -1,0 +1,42 @@
+.main-navbar {
+    .main-nav{
+        .main-nav__item {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 12px 12px;
+            vertical-align: middle;
+            cursor: pointer;
+            .sub-nav-wrapper {
+                position: absolute;
+                top: 0;
+                width: max-content;width: max-content;
+                max-height: 0;
+                opacity: 0;
+                .sub-nav.nav {
+                    display: flex;
+                    flex-direction: column;
+                    li {
+                        padding: 12px;
+                    }
+                }
+                @extend .tr-300;
+            }
+            .active {
+
+            }
+            &:hover {
+                .sub-nav-wrapper {
+                    border: 1px solid #04040410;
+                    position: absolute;
+                    top: 100px;
+                    width: max-content;
+                    max-height: max-content;
+                    opacity: 1;
+                    @extend .tr-300;
+                }
+            }
+        }
+    }
+}

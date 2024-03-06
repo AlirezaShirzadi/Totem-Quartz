@@ -1,0 +1,24 @@
+@mixin font($font-family, $font-style, $font-weight, $font-src) {
+    @font-face {
+        font-family: $font-family;
+        font-style: $font-style;
+        font-weight: $font-weight;
+        // src: url($font-src + '.eot');
+        // src: url($font-src + '.eot?#iefix') format('embedded-opentype'),
+        src: url($font-src + ".woff") format("woff"),
+            url($font-src + ".woff2") format("woff2");
+    }
+}
+
+@mixin fontSize($size, $weight, $line-hight) {
+    font-size: $size + px;
+    font-weight: $weight;
+    line-height: $line-hight + px;
+}
+
+@include font("IranYekan", normal, 300, "../font/iranyekanweblightfanum");
+@include font("IranYekan", normal, 400, "../font/iranyekanwebregularfanum");
+@include font("IranYekan", normal, 500, "../font/iranyekanwebmediumfanum");
+@include font("IranYekan", normal, 600, "../font/iranyekanwebblackfanum");
+@include font("IranYekan", normal, 700, "../font/iranyekanwebboldfanum");
+@include font("IranYekan", normal, 800, "../font/iranyekanwebextraboldfanum");
