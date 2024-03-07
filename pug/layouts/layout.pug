@@ -24,3 +24,5 @@ html(dir="rtl")
         include footer
         script(src='assets/js/scripts.bundle.js')
         block script
+        script(src="node_modules/jquery/dist/jquery.min.js") 
+        script(type="module" src="assets/js/script.js?v=" + new Date().getTime() )
