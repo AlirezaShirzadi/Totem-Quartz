@@ -52,9 +52,8 @@ $light: #f6f5f4;
 @import "public/variables";
 @import "public/reset";
 @import "public/fonts";
+@import "public/icon";
 @import "layouts/header";
-@import "layouts/header-main-nav";
-@import "layouts/header-nav-toggle";
 
 body {
     font-size: 16px;
@@ -65,6 +64,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'IranYekan', sans-serif;
+    position: relative;
   
     p {
       line-height: 1.7;
