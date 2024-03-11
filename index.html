@@ -21,33 +21,27 @@
   <body>
     <header id="main-header">
       <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container-fluid"><a class="navbar-brand" href="#"> <img class="img" src="assets/img/logo.jpg" alt=""></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-          <div class="offcanvas offcanvas-end" id="offcanvasNavbar" tabindex="-1" aria-labelledby="offcanvasNavbarLabel">
+        <div class="container-fluid"><a class="navbar-brand order-lg-1" href="#"> <img class="img" src="assets/img/logo.jpg" alt=""></a>
+          <button class="navbar-toggler order-lg-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="offcanvas offcanvas-end order-lg-0" id="offcanvasNavbar" tabindex="-1" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header justify-content-between"><img class="img" src="assets/img/logo.jpg" alt=""><span class="icon icon-circle-x" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></span></div>
             <div class="offcanvas-body align-items-center">
               <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                 <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">صفحه اصلی</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">محصولات</a></li>
-                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">اخبار</a>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">اخبار<span class="icon icon-chevron-down"></span></a>
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">امروز</a></li>
                     <li><a class="dropdown-item" href="#">دیروز</a></li>
-                    <li><a class="dropdown-item dropdown-toggle" href="#">Something else here</a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                      </ul>
-                    </li>
                   </ul>
                 </li>
               </ul>
-              <form class="d-flex mt-3 mt-lg-0" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form><a class="d-none d-lg-inline extra-menu" href="#"> <span class="icon icon-list"></span></a>
             </div>
           </div>
+          <form class="search-form d-none d-lg-flex mt-3 mt-lg-0 order-2" role="search">
+            <input class="form-control me-2" type="search" placeholder="جست و جو ..." aria-label="Search">
+            <button class="btn btn-outline-success d-flex align-items-center justify-content-center" type="submit"> <span class="icon icon-magnifying-glass"></span></button>
+          </form>
         </div>
       </nav>
     </header>

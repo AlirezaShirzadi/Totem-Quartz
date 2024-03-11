@@ -1,11 +1,11 @@
 header#main-header
     nav.navbar.navbar-expand-lg.fixed-top
         .container-fluid
-            a.navbar-brand(href='#') 
+            a.navbar-brand.order-lg-1(href='#') 
                 img.img(src="assets/img/logo.jpg", alt="")
-            button.navbar-toggler(type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasNavbar' aria-controls='offcanvasNavbar' aria-label='Toggle navigation')
+            button.navbar-toggler.order-lg-0(type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasNavbar' aria-controls='offcanvasNavbar' aria-label='Toggle navigation')
                 span.navbar-toggler-icon
-            #offcanvasNavbar.offcanvas.offcanvas-end(tabindex='-1' aria-labelledby='offcanvasNavbarLabel')
+            #offcanvasNavbar.offcanvas.offcanvas-end.order-lg-0(tabindex='-1' aria-labelledby='offcanvasNavbarLabel')
                 .offcanvas-header.justify-content-between
                     img.img(src="assets/img/logo.jpg", alt="")
                     span.icon.icon-circle-x(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
@@ -18,20 +18,14 @@ header#main-header
                         li.nav-item.dropdown
                             a.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
                                 | اخبار
+                                span.icon.icon-chevron-down
                             ul.dropdown-menu
                                 li
                                     a.dropdown-item(href='#') امروز
                                 li
                                     a.dropdown-item(href='#') دیروز
-                                li
-                                    a.dropdown-item.dropdown-toggle(href='#') Something else here
-                                    ul.dropdown-menu
-                                        li
-                                            a.dropdown-item(href='#') Action
-                                        li
-                                            a.dropdown-item(href='#') Another action
-                    form.d-flex.mt-3.mt-lg-0(role='search')
-                        input.form-control.me-2(type='search' placeholder='Search' aria-label='Search')
-                        button.btn.btn-outline-success(type='submit') Search
-                    a.d-none.d-lg-inline.extra-menu(href="#") 
-                        span.icon.icon-list
+            form.search-form.d-none.d-lg-flex.mt-3.mt-lg-0.order-2(role='search')
+                input.form-control.me-2(type='search' placeholder='جست و جو ...' aria-label='Search')
+                button.btn.btn-outline-success.d-flex.align-items-center.justify-content-center(type='submit') 
+                    span.icon.icon-magnifying-glass
+                    
