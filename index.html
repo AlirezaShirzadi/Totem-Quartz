@@ -45,8 +45,56 @@
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <section class="section-home-slider"> 
+        <div class="owl-carousel owl-theme">
+          <div class="item"><img class="img" src="assets/img/stone1.jpg" alt="stone1">
+            <div class="info"> 
+              <div class="title">لورم ایپسوم</div>
+              <div class="subtitle">لورم ایپسوم</div><a class="btn-outline-custom" href="#">بیشتر بخوانید  </a>
+            </div>
+          </div>
+          <div class="item"> <img class="img" src="assets/img/stone2.jpg" alt="stone2">
+            <div class="info"> 
+              <div class="title">لورم ایپسوم</div>
+              <div class="subtitle">لورم ایپسوم</div><a class="btn-outline-custom" href="#">بیشتر بخوانید  </a>
+            </div>
+          </div>
+          <div class="item"> <img class="img" src="assets/img/stone3.jpg" alt="stone3">
+            <div class="info"> 
+              <div class="title">لورم ایپسوم</div>
+              <div class="subtitle">لورم ایپسوم</div><a class="btn-outline-custom" href="#">بیشتر بخوانید   </a>
+            </div>
+          </div>
+          <div class="item"> <img class="img" src="assets/img/stone4.jpg" alt="stone4">
+            <div class="info"> 
+              <div class="title">لورم ایپسوم</div>
+              <div class="subtitle">لورم ایپسوم</div><a class="btn-outline-custom" href="#">بیشتر بخوانید   </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <script src="assets/js/scripts.bundle.js"></script>
-    <script></script>
+    <script>
+      $('.owl-carousel').owlCarousel({
+          loop:true,
+          margin:10,
+          nav:true,
+          items:1,
+          rtl: true,
+          //- responsive:{
+          //-     0:{
+          //-         items:1
+          //-     },
+          //-     600:{
+          //-         items:3
+          //-     },
+          //-     1000:{
+          //-         items:5
+          //-     }
+          //- }
+      })
+    </script>
   </body>
 </html>

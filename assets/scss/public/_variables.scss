@@ -1,14 +1,41 @@
 .tr-100 {
-    -webkit-transition: all 100ms ease-in-out;
-    -moz-transition: all 100ms ease-in-out;
-    -ms-transition: all 100ms ease-in-out;
-    -o-transition: all 100ms ease-in-out;
-    transition: all 100ms ease-in-out;
+  -webkit-transition: all 100ms ease-in-out;
+  -moz-transition: all 100ms ease-in-out;
+  -ms-transition: all 100ms ease-in-out;
+  -o-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
 }
 .tr-300 {
-    -webkit-transition: all 300ms ease-in-out;
-    -moz-transition: all 300ms ease-in-out;
-    -ms-transition: all 300ms ease-in-out;
-    -o-transition: all 300ms ease-in-out;
-    transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.btn-outline-custom {
+  position: relative;
+  display: inline-block;
+  border: 1px solid #ffffff80;
+  padding: 12px 32px;
+  background: transparent;
+  color: #fff;
+  &::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background: black;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  &:hover {
+    &::before {
+        opacity: .1;
+        -webkit-filter: blur(4px);
+        filter: blur(4px);
+    }
+  }
 }
