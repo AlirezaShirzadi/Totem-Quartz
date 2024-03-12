@@ -10559,7 +10559,7 @@ textarea.form-control-lg {
   transition: all 100ms ease-in-out;
 }
 
-.tr-300, #main-header .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .dropdown:not(.full-size) .dropdown-menu .dropdown-item:hover, #main-header .navbar .container-sm .offcanvas .offcanvas-body .navbar-nav .dropdown:not(.full-size) .dropdown-menu .dropdown-item:hover, #main-header .navbar .container-md .offcanvas .offcanvas-body .navbar-nav .dropdown:not(.full-size) .dropdown-menu .dropdown-item:hover, #main-header .navbar .container-lg .offcanvas .offcanvas-body .navbar-nav .dropdown:not(.full-size) .dropdown-menu .dropdown-item:hover, #main-header .navbar .container-xl .offcanvas .offcanvas-body .navbar-nav .dropdown:not(.full-size) .dropdown-menu .dropdown-item:hover, #main-header .navbar .container-xxl .offcanvas .offcanvas-body .navbar-nav .dropdown:not(.full-size) .dropdown-menu .dropdown-item:hover {
+.tr-300, #main-header .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .dropdown .dropdown-menu .dropdown-item:hover, #main-header .navbar .container-sm .offcanvas .offcanvas-body .navbar-nav .dropdown .dropdown-menu .dropdown-item:hover, #main-header .navbar .container-md .offcanvas .offcanvas-body .navbar-nav .dropdown .dropdown-menu .dropdown-item:hover, #main-header .navbar .container-lg .offcanvas .offcanvas-body .navbar-nav .dropdown .dropdown-menu .dropdown-item:hover, #main-header .navbar .container-xl .offcanvas .offcanvas-body .navbar-nav .dropdown .dropdown-menu .dropdown-item:hover, #main-header .navbar .container-xxl .offcanvas .offcanvas-body .navbar-nav .dropdown .dropdown-menu .dropdown-item:hover {
   -webkit-transition: all 300ms ease-in-out;
   -moz-transition: all 300ms ease-in-out;
   -ms-transition: all 300ms ease-in-out;
@@ -11179,7 +11179,7 @@ ul {
 #main-header .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .dropdown-full-size:hover .dropdown-menu, #main-header .navbar .container-sm .offcanvas .offcanvas-body .navbar-nav .dropdown-full-size:hover .dropdown-menu, #main-header .navbar .container-md .offcanvas .offcanvas-body .navbar-nav .dropdown-full-size:hover .dropdown-menu, #main-header .navbar .container-lg .offcanvas .offcanvas-body .navbar-nav .dropdown-full-size:hover .dropdown-menu, #main-header .navbar .container-xl .offcanvas .offcanvas-body .navbar-nav .dropdown-full-size:hover .dropdown-menu, #main-header .navbar .container-xxl .offcanvas .offcanvas-body .navbar-nav .dropdown-full-size:hover .dropdown-menu {
   position: fixed;
   display: block;
-  top: 84px;
+  top: 83px;
   right: 0;
   margin-top: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.062745098);
@@ -11193,7 +11193,7 @@ ul {
   vertical-align: middle;
   margin-right: 8px;
 }
-#main-header .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .dropdown:not(.full-size) .dropdown-menu, #main-header .navbar .container-sm .offcanvas .offcanvas-body .navbar-nav .dropdown:not(.full-size) .dropdown-menu, #main-header .navbar .container-md .offcanvas .offcanvas-body .navbar-nav .dropdown:not(.full-size) .dropdown-menu, #main-header .navbar .container-lg .offcanvas .offcanvas-body .navbar-nav .dropdown:not(.full-size) .dropdown-menu, #main-header .navbar .container-xl .offcanvas .offcanvas-body .navbar-nav .dropdown:not(.full-size) .dropdown-menu, #main-header .navbar .container-xxl .offcanvas .offcanvas-body .navbar-nav .dropdown:not(.full-size) .dropdown-menu {
+#main-header .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .dropdown .dropdown-menu, #main-header .navbar .container-sm .offcanvas .offcanvas-body .navbar-nav .dropdown .dropdown-menu, #main-header .navbar .container-md .offcanvas .offcanvas-body .navbar-nav .dropdown .dropdown-menu, #main-header .navbar .container-lg .offcanvas .offcanvas-body .navbar-nav .dropdown .dropdown-menu, #main-header .navbar .container-xl .offcanvas .offcanvas-body .navbar-nav .dropdown .dropdown-menu, #main-header .navbar .container-xxl .offcanvas .offcanvas-body .navbar-nav .dropdown .dropdown-menu {
   text-align: start;
   margin-top: 0;
   animation-duration: 0.4s;
@@ -11203,18 +11203,18 @@ ul {
   border-radius: 0;
   padding: 0;
 }
-#main-header .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .dropdown:not(.full-size) .dropdown-menu .dropdown-item, #main-header .navbar .container-sm .offcanvas .offcanvas-body .navbar-nav .dropdown:not(.full-size) .dropdown-menu .dropdown-item, #main-header .navbar .container-md .offcanvas .offcanvas-body .navbar-nav .dropdown:not(.full-size) .dropdown-menu .dropdown-item, #main-header .navbar .container-lg .offcanvas .offcanvas-body .navbar-nav .dropdown:not(.full-size) .dropdown-menu .dropdown-item, #main-header .navbar .container-xl .offcanvas .offcanvas-body .navbar-nav .dropdown:not(.full-size) .dropdown-menu .dropdown-item, #main-header .navbar .container-xxl .offcanvas .offcanvas-body .navbar-nav .dropdown:not(.full-size) .dropdown-menu .dropdown-item {
+#main-header .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .dropdown .dropdown-menu .dropdown-item, #main-header .navbar .container-sm .offcanvas .offcanvas-body .navbar-nav .dropdown .dropdown-menu .dropdown-item, #main-header .navbar .container-md .offcanvas .offcanvas-body .navbar-nav .dropdown .dropdown-menu .dropdown-item, #main-header .navbar .container-lg .offcanvas .offcanvas-body .navbar-nav .dropdown .dropdown-menu .dropdown-item, #main-header .navbar .container-xl .offcanvas .offcanvas-body .navbar-nav .dropdown .dropdown-menu .dropdown-item, #main-header .navbar .container-xxl .offcanvas .offcanvas-body .navbar-nav .dropdown .dropdown-menu .dropdown-item {
   padding: 12px 14px;
 }
-#main-header .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .dropdown:not(.full-size) .dropdown-menu .dropdown-item:hover, #main-header .navbar .container-sm .offcanvas .offcanvas-body .navbar-nav .dropdown:not(.full-size) .dropdown-menu .dropdown-item:hover, #main-header .navbar .container-md .offcanvas .offcanvas-body .navbar-nav .dropdown:not(.full-size) .dropdown-menu .dropdown-item:hover, #main-header .navbar .container-lg .offcanvas .offcanvas-body .navbar-nav .dropdown:not(.full-size) .dropdown-menu .dropdown-item:hover, #main-header .navbar .container-xl .offcanvas .offcanvas-body .navbar-nav .dropdown:not(.full-size) .dropdown-menu .dropdown-item:hover, #main-header .navbar .container-xxl .offcanvas .offcanvas-body .navbar-nav .dropdown:not(.full-size) .dropdown-menu .dropdown-item:hover {
+#main-header .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .dropdown .dropdown-menu .dropdown-item:hover, #main-header .navbar .container-sm .offcanvas .offcanvas-body .navbar-nav .dropdown .dropdown-menu .dropdown-item:hover, #main-header .navbar .container-md .offcanvas .offcanvas-body .navbar-nav .dropdown .dropdown-menu .dropdown-item:hover, #main-header .navbar .container-lg .offcanvas .offcanvas-body .navbar-nav .dropdown .dropdown-menu .dropdown-item:hover, #main-header .navbar .container-xl .offcanvas .offcanvas-body .navbar-nav .dropdown .dropdown-menu .dropdown-item:hover, #main-header .navbar .container-xxl .offcanvas .offcanvas-body .navbar-nav .dropdown .dropdown-menu .dropdown-item:hover {
   background-color: rgba(0, 0, 0, 0.062745098);
 }
-#main-header .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .dropdown:not(.full-size):hover .dropdown-menu, #main-header .navbar .container-sm .offcanvas .offcanvas-body .navbar-nav .dropdown:not(.full-size):hover .dropdown-menu, #main-header .navbar .container-md .offcanvas .offcanvas-body .navbar-nav .dropdown:not(.full-size):hover .dropdown-menu, #main-header .navbar .container-lg .offcanvas .offcanvas-body .navbar-nav .dropdown:not(.full-size):hover .dropdown-menu, #main-header .navbar .container-xl .offcanvas .offcanvas-body .navbar-nav .dropdown:not(.full-size):hover .dropdown-menu, #main-header .navbar .container-xxl .offcanvas .offcanvas-body .navbar-nav .dropdown:not(.full-size):hover .dropdown-menu {
+#main-header .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .dropdown:hover .dropdown-menu, #main-header .navbar .container-sm .offcanvas .offcanvas-body .navbar-nav .dropdown:hover .dropdown-menu, #main-header .navbar .container-md .offcanvas .offcanvas-body .navbar-nav .dropdown:hover .dropdown-menu, #main-header .navbar .container-lg .offcanvas .offcanvas-body .navbar-nav .dropdown:hover .dropdown-menu, #main-header .navbar .container-xl .offcanvas .offcanvas-body .navbar-nav .dropdown:hover .dropdown-menu, #main-header .navbar .container-xxl .offcanvas .offcanvas-body .navbar-nav .dropdown:hover .dropdown-menu {
   margin-top: 0;
   display: block;
   border-radius: 0;
 }
-#main-header .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .dropdown:not(.full-size)::before, #main-header .navbar .container-sm .offcanvas .offcanvas-body .navbar-nav .dropdown:not(.full-size)::before, #main-header .navbar .container-md .offcanvas .offcanvas-body .navbar-nav .dropdown:not(.full-size)::before, #main-header .navbar .container-lg .offcanvas .offcanvas-body .navbar-nav .dropdown:not(.full-size)::before, #main-header .navbar .container-xl .offcanvas .offcanvas-body .navbar-nav .dropdown:not(.full-size)::before, #main-header .navbar .container-xxl .offcanvas .offcanvas-body .navbar-nav .dropdown:not(.full-size)::before {
+#main-header .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .dropdown::before, #main-header .navbar .container-sm .offcanvas .offcanvas-body .navbar-nav .dropdown::before, #main-header .navbar .container-md .offcanvas .offcanvas-body .navbar-nav .dropdown::before, #main-header .navbar .container-lg .offcanvas .offcanvas-body .navbar-nav .dropdown::before, #main-header .navbar .container-xl .offcanvas .offcanvas-body .navbar-nav .dropdown::before, #main-header .navbar .container-xxl .offcanvas .offcanvas-body .navbar-nav .dropdown::before {
   content: "";
 }
 #main-header .navbar .container-fluid form, #main-header .navbar .container-sm form, #main-header .navbar .container-md form, #main-header .navbar .container-lg form, #main-header .navbar .container-xl form, #main-header .navbar .container-xxl form {
@@ -11302,6 +11302,12 @@ ul {
 }
 .section-home-slider .owl-carousel .owl-nav .owl-next:hover {
   background-color: transparent;
+}
+.section-home-slider .owl-carousel .owl-dots {
+  position: absolute;
+  bottom: 10px;
+  right: 50%;
+  transform: translateX(50%);
 }
 
 body {

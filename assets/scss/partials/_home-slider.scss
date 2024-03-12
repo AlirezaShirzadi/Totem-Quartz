@@ -56,5 +56,11 @@
         }
       }
     }
+    .owl-dots {
+      position: absolute;
+      bottom: 10px;
+      right: 50%;
+      transform: translateX(50%);
+    }
   }
 }
