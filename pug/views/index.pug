@@ -3,10 +3,11 @@ extends ../layouts/layout
 block content
     main
         include ../partials/home-slider
+        include ../partials/home-collection
 
 block script
     script.
-        $('.owl-carousel').owlCarousel({
+        $('.home-carousel').owlCarousel({
             loop:true,
             margin:10,
             nav:true,
@@ -14,4 +15,14 @@ block script
             rtl: true,
             animateOut: 'fadeOut',
             autoplaySpeed: 400,
+        })
+        $('.collection-carousel').owlCarousel({
+            loop:true,
+            margin:24,
+            nav:false,
+            items:1,
+            rtl: true,
+            animateOut: 'fadeOut',
+            autoplaySpeed: 400,
+            autoWidth: true,
         })

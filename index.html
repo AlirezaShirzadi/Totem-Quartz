@@ -73,7 +73,7 @@
     </header>
     <main>
       <section class="section-home-slider"> 
-        <div class="owl-carousel owl-theme">
+        <div class="owl-carousel owl-theme home-carousel">
           <div class="item"><img class="img" src="assets/img/stone1.jpg" alt="stone1">
             <div class="info"> 
               <div class="title">لورم ایپسوم</div>
@@ -100,10 +100,35 @@
           </div>
         </div>
       </section>
+      <section class="section-home-collection">
+        <div class="container">
+          <h2 class="title">کالکشن ها</h2>
+          <div class="owl-carousel owl-theme collection-carousel">
+            <div class="item"> 
+                    <div class="collection-box"> 
+                      <figure><a href="#"> <img class="img" src="assets/img/collec1.jpg" alt="">
+                          <h3 class="title">کوارتز</h3><span class="more">بیشتر بخوانید</span></a></figure>
+                    </div>
+            </div>
+            <div class="item"> 
+                    <div class="collection-box"> 
+                      <figure><a href="#"> <img class="img" src="assets/img/collec2.jpg" alt="">
+                          <h3 class="title">معدن</h3><span class="more">بیشتر بخوانید</span></a></figure>
+                    </div>
+            </div>
+            <div class="item"> 
+                    <div class="collection-box"> 
+                      <figure><a href="#"> <img class="img" src="assets/img/collec3.jpg" alt="">
+                          <h3 class="title">سنگ</h3><span class="more">بیشتر بخوانید</span></a></figure>
+                    </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <script src="assets/js/scripts.bundle.js"></script>
     <script>
-      $('.owl-carousel').owlCarousel({
+      $('.home-carousel').owlCarousel({
           loop:true,
           margin:10,
           nav:true,
@@ -111,6 +136,16 @@
           rtl: true,
           animateOut: 'fadeOut',
           autoplaySpeed: 400,
+      })
+      $('.collection-carousel').owlCarousel({
+          loop:true,
+          margin:24,
+          nav:false,
+          items:1,
+          rtl: true,
+          animateOut: 'fadeOut',
+          autoplaySpeed: 400,
+          autoWidth: true,
       })
     </script>
   </body>

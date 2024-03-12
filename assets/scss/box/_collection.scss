@@ -1,0 +1,32 @@
+.collection-box {
+  position: relative;
+  width: 500px;
+  figure {
+    .img {
+      height: 500px;
+      width: 500px;
+      object-fit: cover;
+    }
+    .title {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        color: #fff;
+        background-color: $main;
+        padding: 12px 14px;
+        border-radius: 48px;
+        &::before{
+            content: none;
+        }
+    }
+    .more {
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+        color: #fff;
+        background-color: $secondary;
+        padding: 12px 14px;
+        border-radius: 48px;
+    }
+  }
+}
