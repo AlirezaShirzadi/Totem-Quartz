@@ -33,9 +33,9 @@
   }
   &:hover {
     &::before {
-        opacity: .1;
-        -webkit-filter: blur(4px);
-        filter: blur(4px);
+      opacity: 0.1;
+      -webkit-filter: blur(4px);
+      filter: blur(4px);
     }
   }
 }

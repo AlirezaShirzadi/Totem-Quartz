@@ -1,0 +1,34 @@
+.section-home-product {
+    padding-bottom: 100px;
+    .title {
+        position: relative;
+        @include fontSize(28, 700, 28);
+        text-align: start;
+        margin-bottom: 48px;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          right: -40px;
+          transform: translateY(-50%);
+          width: 30px;
+          height: 5px;
+          border-radius: 12px;
+          background-color: $main;
+        }
+        @include media-breakpoint-down(lg) {
+          text-align: center;
+          &::before {
+            content: "";
+            right: 27%;
+          }
+        }
+        @include media-breakpoint-down(md) {
+          text-align: center;
+          &::before {
+            content: "";
+            right: 10%;
+          }
+        }
+      }
+}

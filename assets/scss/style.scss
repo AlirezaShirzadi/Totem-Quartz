@@ -56,7 +56,9 @@ $light: #f6f5f4;
 @import "layouts/header";
 @import "partials/home-slider";
 @import "partials/home-collection";
+@import "partials/home-product";
 @import "box/collection";
+@import "box/product";
 
 body {
     font-size: 16px;
