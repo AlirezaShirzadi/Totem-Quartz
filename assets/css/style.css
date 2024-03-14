@@ -10673,8 +10673,8 @@ ul {
 }
 @font-face {
   font-family: "TQ";
-  src: url("../icon/TQ.eot?ap5wa0");
-  src: url("../icon/TQ.eot?ap5wa0#iefix") format("embedded-opentype"), url("../icon/TQ.ttf?ap5wa0") format("truetype"), url("../icon/TQ.woff?ap5wa0") format("woff"), url("../icon/TQ.svg?ap5wa0#TQ") format("svg");
+  src: url("../icon/TQ.eot?lyok7o");
+  src: url("../icon/TQ.eot?lyok7o#iefix") format("embedded-opentype"), url("../icon/TQ.ttf?lyok7o") format("truetype"), url("../icon/TQ.woff?lyok7o") format("woff"), url("../icon/TQ.svg?lyok7o#TQ") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -10691,6 +10691,10 @@ ul {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-instagram:before {
+  content: "\e963";
 }
 
 .icon-0:before {
@@ -11239,6 +11243,88 @@ ul {
     opacity: 0;
   }
 }
+.section-footer {
+  padding-top: 30px;
+  margin-bottom: 1px;
+  background-color: #323131;
+}
+.section-footer .menu-title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  margin: 24px 0 16px;
+}
+.section-footer ul {
+  list-style: none;
+}
+.section-footer ul .menu-item {
+  margin: 5px 0;
+}
+.section-footer ul .menu-item .menu-link {
+  position: relative;
+  color: #c7c7c7;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 14px;
+}
+.section-footer ul .menu-item .menu-link::after {
+  content: " ";
+  position: absolute;
+  bottom: -30%;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  border-radius: 12px;
+  background-color: #e9232c;
+  transform: scaleX(0);
+  transition: transform 0.2s;
+  transform-origin: right;
+  z-index: 2;
+  border: 0;
+}
+.section-footer ul .menu-item .menu-link:hover::after {
+  content: "";
+  transform-origin: right;
+  transform: scaleX(1);
+}
+.section-footer address {
+  color: #c7c7c7;
+  font-size: 14px;
+  font-weight: 400;
+}
+.section-footer span {
+  color: #c7c7c7;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.inc-info {
+  background-color: #323131;
+}
+.inc-info .py-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #c7c7c7;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 12px;
+}
+.inc-info .py-1 p {
+  margin-bottom: 0;
+}
+.inc-info .py-1 h6, .inc-info .py-1 .h6 {
+  color: #c7c7c7;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 12px;
+  margin-bottom: 0;
+}
+.inc-info .py-1 h6 a, .inc-info .py-1 .h6 a {
+  color: #fff;
+}
+
 .section-home-slider .owl-carousel {
   position: relative;
 }
