@@ -1,0 +1,61 @@
+section.section-home-gallery(data-aos="fade-down") 
+    .container
+        h2.title گالری تصاویر
+        ul#myTab.nav.nav-tabs(role='tablist')
+            li.nav-item(role='presentation')
+                button#all-tab.nav-link.active(data-bs-toggle='tab' data-bs-target='#all' type='button' role='tab' aria-controls='all' aria-selected='true') همه
+            li.nav-item(role='presentation')
+                button#bathroom-tab.nav-link(data-bs-toggle='tab' data-bs-target='#bathroom' type='button' role='tab' aria-controls='bathroom' aria-selected='false') سرویس بهداشتی
+            li.nav-item(role='presentation')
+                button#kitchen-tab.nav-link(data-bs-toggle='tab' data-bs-target='#kitchen' type='button' role='tab' aria-controls='kitchen' aria-selected='false') آشپزخانه
+        #myTabContent.tab-content
+            #all.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='all-tab')
+                .row 
+                    .col-lg-6
+                        a(href="#") 
+                            figure 
+                                img.img(src="assets/img/prod1.jpg", alt="prod1")
+                    .col-lg-6
+                        .row
+                            .col-6 
+                                a(href="#") 
+                                    figure 
+                                        img.img__small(src="assets/img/prod2.jpg", alt="prod1")
+                            .col-6 
+                                a(href="#") 
+                                    figure 
+                                        img.img__small(src="assets/img/prod3.jpg", alt="prod1")
+                            .col-6 
+                                a(href="#") 
+                                    figure 
+                                        img.img__small(src="assets/img/prod4.jpg", alt="prod1")
+                            .col-6
+                                a(href="#") 
+                                    figure 
+                                        img.img__small(src="assets/img/prod5.jpg", alt="prod1") 
+                    .col-lg-6 
+                        .row
+                            .col-6 
+                                a(href="#") 
+                                    figure 
+                                        img.img__small(src="assets/img/collec1.jpg", alt="prod1")
+                            .col-6 
+                                a(href="#") 
+                                    figure 
+                                        img.img__small(src="assets/img/collec2.jpg", alt="prod1")
+                            .col-6 
+                                a(href="#") 
+                                    figure 
+                                        img.img__small(src="assets/img/collec3.jpg", alt="prod1")
+                            .col-6 
+                                a(href="#") 
+                                    figure 
+                                        img.img__small(src="assets/img/collec2.jpg", alt="prod1")
+                    .col-lg-6
+                        a(href="#") 
+                            figure 
+                                img.img(src="assets/img/collec1.jpg", alt="prod1")
+            #bathroom.tab-pane.fade(role='tabpanel' aria-labelledby='bathroom-tab') ...
+            #kitchen.tab-pane.fade(role='tabpanel' aria-labelledby='kitchen-tab') ...
+        .more.my-4.text-center  
+            a.btn(href="#") مشاهده همه

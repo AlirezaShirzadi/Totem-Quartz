@@ -5,6 +5,7 @@ block content
         include ../partials/home-slider
         include ../partials/home-collection
         include ../partials/home-product
+        include ../partials/home-gallery
 
 block script
     script.
@@ -18,12 +19,11 @@ block script
             autoplaySpeed: 400,
         })
         $('.collection-carousel').owlCarousel({
-            loop:true,
+            loop:false,
             margin:24,
             nav:false,
             items:1,
             rtl: true,
-            //- animateOut: 'fadeOutLeft',
             autoplaySpeed: 400,
             autoWidth: true,
         })
