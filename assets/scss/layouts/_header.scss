@@ -1,4 +1,13 @@
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  animation: menuShow .3s ease;
+}
+
 #main-header {
+  z-index: 10;
+  background-color: #fff;
   .navbar {
     position: relative;
     border-bottom: 1px solid #00000010;
@@ -6,6 +15,7 @@
     .container-fluid {
       .navbar-brand {
         padding: 0;
+        margin: 0;
       }
       .navbar-toggler {
         border: none;
