@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  animation: menuShow .3s ease;
+  animation: menuShow 0.3s ease;
 }
 
 #main-header {
@@ -98,13 +98,22 @@
                 padding: 0;
                 .row {
                   .title {
-                    @include fontSize(22, 500, 22);
+                    @include fontSize(18, 500, 18);
                     margin-bottom: 16px;
                   }
                   .dropdown-item {
-                    @include fontSize(16, 400, 16);
+                    @include fontSize(14, 400, 14);
                     padding: 14px 0;
                   }
+                }
+                .logo-img {
+                  width: 80px;
+                  height: 80px;
+                  padding: 16px;
+                  object-fit: cover;
+                  margin-bottom: 16px;
+                  border-radius: 100%;
+                  box-shadow: 0 4px 10px 0 rgba(0,0,0,.08);
                 }
               }
               &:hover {
@@ -118,9 +127,11 @@
                   width: 100vw;
                   padding: 60px 120px;
                   @include media-breakpoint-down(lg) {
-                    position: relative;
-                    top: 0;
+                    position: absolute;
+                    display: block;
+                    top: 100%;
                     right: 0;
+                    width: 100%;
                   }
                 }
               }
@@ -164,14 +175,94 @@
           }
         }
       }
-      form {
-        margin-left: 30px;
-      }
-      .search-form {
-        .form-control {
-          &:focus {
-            box-shadow: none !important;
-            border-color: $main-10 !important;
+      .utilities {
+        .lang-dropdown {
+          position: relative;
+          .dropdown-toggle {
+            padding: 30px 24px;
+            &::after {
+              content: none;
+            }
+            .icon-chevron-down {
+              vertical-align: middle;
+              margin-right: 8px;
+            }
+          }
+          .dropdown-menu {
+            text-align: start;
+            margin-top: 0;
+            animation-duration: 0.4s;
+            -webkit-animation-duration: 0.4s;
+            animation-name: menuShow;
+            -webkit-animation-name: menuShow;
+            border-radius: 0;
+            padding: 0;
+            .dropdown-item {
+              padding: 12px 14px;
+              &:hover {
+                background-color: #00000010;
+                @extend .tr-300;
+              }
+            }
+          }
+          &:hover {
+            .dropdown-menu {
+              margin-top: 0;
+              margin-right: -50px;
+              display: block;
+              border-radius: 0;
+            }
+          }
+          &::before {
+            content: "";
+          }
+        }
+        .search-form {
+          margin-left: 30px;
+          position: relative;
+          .btn-search {
+            position: relative;
+            padding: 12px;
+            height: 42px;
+            background-color: $main-10;
+            z-index: 2;
+            .icon {
+              color: #fff;
+            }
+            &.on {
+              background-color: $main;
+              box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.08);
+            }
+            &:active {
+              border: 0;
+            }
+          }
+          .form-control {
+            position: absolute;
+            top: 0;
+            width: 300px;
+            left: -8px;
+            height: 50px;
+            border: 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.08);
+            opacity: 0;
+            &.show {
+              position: absolute;
+              top: 100px;
+              width: 300px;
+              left: -8px;
+              height: 50px;
+              border: 0;
+              border-radius: 12px;
+              box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.08);
+              opacity: 1;
+              animation: menuShow 0.5s ease;
+            }
+            &:focus {
+              box-shadow: none !important;
+              border-color: $main-10 !important;
+            }
           }
         }
       }

@@ -2,12 +2,12 @@ header#main-header
     nav.navbar.navbar-expand-lg.fixed-top
         .container-fluid
             a.navbar-brand.order-lg-0(href='#') 
-                img.img(src="assets/img/logo.jpg", alt="")
+                img.img(src="assets/img/logo.jpg" alt="")
             button.navbar-toggler.order-lg-1(type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasNavbar' aria-controls='offcanvasNavbar' aria-label='Toggle navigation')
                 span.navbar-toggler-icon
             #offcanvasNavbar.offcanvas.offcanvas-end.order-lg-1(tabindex='-1' aria-labelledby='offcanvasNavbarLabel')
                 .offcanvas-header.justify-content-between
-                    img.img(src="assets/img/logo.jpg", alt="")
+                    img.img(src="assets/img/logo.jpg" alt="")
                     span.icon.icon-circle-x(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
                 .offcanvas-body.align-items-center
                     ul.navbar-nav.justify-content-center.flex-grow-1.pe-3
@@ -26,11 +26,11 @@ header#main-header
                                     a.dropdown-item(href='#') دیروز
                         li.nav-item.dropdown-full-size
                             a.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
-                                | برند ها
+                                | انواع محصولات
                                 span.icon.icon-chevron-down
                             ul.dropdown-menu
                                 .row 
-                                    .col-lg-4.text-start
+                                    .col-lg-3.text-start
                                         h3.title کوارتز
                                         li
                                             a.dropdown-item(href='#') کوارتز
@@ -38,7 +38,7 @@ header#main-header
                                             a.dropdown-item(href='#') معدن
                                         li
                                             a.dropdown-item(href='#') کوه
-                                    .col-lg-4.text-start
+                                    .col-lg-3.text-start
                                         h3.title معدن
                                         li
                                             a.dropdown-item(href='#') کوارتز
@@ -52,14 +52,50 @@ header#main-header
                                             a.dropdown-item(href='#') معدن
                                         li
                                             a.dropdown-item(href='#') کوه
-                                    .col-lg-4.text-start
+                                    .col-lg-3.text-start
                                         h3.title کوه
                                         li
                                             a.dropdown-item(href='#') کوارتز
                                         li
                                             a.dropdown-item(href='#') معدن
-            form.search-form.d-none.d-lg-flex.mt-3.mt-lg-0.order-2(role='search')
-                input.form-control.me-2(type='search' placeholder='جست و جو ...' aria-label='Search')
-                button.btn.btn-outline-success.d-flex.align-items-center.justify-content-center(type='submit') 
-                    span.icon.icon-magnifying-glass
-                    
+                                    .col-lg-3.text-start
+                                        h3.title کوارتز
+                                        li
+                                            a.dropdown-item(href='#') کوارتز
+                                        li
+                                            a.dropdown-item(href='#') معدن
+                                        li
+                                            a.dropdown-item(href='#') کوه
+                        li.nav-item.dropdown-full-size
+                            a.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+                                | برند ها
+                                span.icon.icon-chevron-down
+                            ul.dropdown-menu
+                                .row 
+                                    .col-lg-4.text-center
+                                        a.d-flex.flex-column.align-items-center(href="#")
+                                            img.logo-img(src="assets/img/brand1.png", alt="") 
+                                            span.title کوارتز
+                                    .col-lg-4.text-center
+                                        a.d-flex.flex-column.align-items-center(href="#")
+                                            img.logo-img(src="assets/img/brand2.png", alt="") 
+                                            span.title معدن
+                                    .col-lg-4.text-center
+                                        a.d-flex.flex-column.align-items-center(href="#")
+                                            img.logo-img(src="assets/img/brand3.png", alt="") 
+                                            span.title کوه
+            .utilities.d-none.d-lg-flex.order-2
+                form.search-form.d-none.d-lg-flex.mt-3.mt-lg-0(role='search')
+                    input.form-control.search-input.me-2(type='search' placeholder='جست و جو ...' aria-label='Search')
+                    button.btn.btn-search.d-flex.align-items-center.justify-content-center.my-auto(type='button') 
+                        span.icon.icon-magnifying-glass
+                .lang-dropdown.my-auto
+                    a.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+                        | زبان
+                        span.icon.icon-chevron-down
+                    ul.dropdown-menu
+                        li
+                            a.dropdown-item(href='#') فارسی
+                        li
+                            a.dropdown-item(href='#') انگلیسی
+
