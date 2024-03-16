@@ -40,6 +40,7 @@
               .nav-link {
                 position: relative;
                 padding: 30px 24px;
+                @include fontSize(14, 400, 14);
                 &.active {
                   &::after {
                     content: "";
@@ -110,7 +111,7 @@
                 .dropdown-menu {
                   position: fixed;
                   display: block;
-                  top: 83px;
+                  top: 77px;
                   right: 0;
                   margin-top: 0;
                   border-top: 1px solid #00000010;

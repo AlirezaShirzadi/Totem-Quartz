@@ -1,8 +1,8 @@
 .section-home-collection {
-    padding: 100px 0;
+    padding: 50px 0;
     .title {
         position: relative;
-        @include fontSize(28, 700, 28);
+        @include fontSize(22, 700, 22);
         text-align: start;
         margin-bottom: 48px;
         &::before {
@@ -12,7 +12,7 @@
           right: -40px;
           transform: translateY(-50%);
           width: 30px;
-          height: 5px;
+          height: 3px;
           border-radius: 12px;
           background-color: $main;
         }
