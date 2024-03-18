@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'TQ';
-  src:  url('../icon/TQ.eot?lyok7o');
-  src:  url('../icon/TQ.eot?lyok7o#iefix') format('embedded-opentype'),
-    url('../icon/TQ.ttf?lyok7o') format('truetype'),
-    url('../icon/TQ.woff?lyok7o') format('woff'),
-    url('../icon/TQ.svg?lyok7o#TQ') format('svg');
+  src:  url('../icon/TQ.eot?4963au');
+  src:  url('../icon/TQ.eot?4963au#iefix') format('embedded-opentype'),
+    url('../icon/TQ.ttf?4963au') format('truetype'),
+    url('../icon/TQ.woff?4963au') format('woff'),
+    url('../icon/TQ.svg?4963au#TQ') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -294,6 +294,9 @@
 }
 .icon-magnifying-glass:before {
   content: "\e957";
+}
+.icon-newspaper:before {
+  content: "\e964";
 }
 .icon-pen:before {
   content: "\e958";

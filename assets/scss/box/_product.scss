@@ -10,40 +10,37 @@
       object-fit: cover;
       @extend .tr-300;
     }
-    .name {
+    .details {
       position: absolute;
-      bottom: -8px;
-      left: 0;
-      color: #fff;
-      border-radius: 48px;
+      padding: 16px;
+      bottom: -10px;
+      right: 50%;
+      transform: translateX(50%);
       background-color: $secondary;
-      padding: 12px 16px;
-      text-wrap: nowrap;
-      @include fontSize(18, 500, 18);
+      text-align: center;
       @extend .tr-300;
-    }
-    .brand {
-      position: absolute;
-      top: -8px;
-      right: -8px;
-      border-radius: 48px;
-      color: #fff;
-      background-color: $main;
-      padding: 12px 16px;
-      text-wrap: nowrap;
-      @include fontSize(16, 400, 16);
-      @extend .tr-300;
-    }
-    &:hover {
       .name {
-        left: 50%;
-        transform: translateX(-50%);
-        @extend .tr-300;
+        text-wrap: nowrap;
+        color: #fff;
+        margin-bottom: 16px;
+        @include fontSize(18, 500, 18);
       }
       .brand {
-        right: 50%;
-        transform: translateX(50%);
+        text-wrap: nowrap;
+        color: #f7f7f780;
+        @include fontSize(16, 400, 16);
+      }
+    }
+    &:hover {
+      .details {
+        background-color: $main;
         @extend .tr-300;
+        .name {
+          @extend .tr-300;
+        }
+        .brand {
+          @extend .tr-300;
+        }
       }
     }
   }

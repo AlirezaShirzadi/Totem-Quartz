@@ -15,7 +15,7 @@
         background-color: $main;
         padding: 12px 24px;
         border-radius: 48px;
-        @include fontSize(18, 500, 18);
+        @include fontSize(18, 900, 18);
         &::before{
             content: none;
         }
@@ -28,7 +28,7 @@
         background-color: $secondary;
         padding: 12px 14px;
         border-radius: 48px;
-        @include fontSize(12, 500, 12);
+        @include fontSize(14, 700, 14);
     }
   }
 }

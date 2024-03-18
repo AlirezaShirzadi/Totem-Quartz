@@ -2,7 +2,7 @@
     padding: 50px 0;
     .title {
         position: relative;
-        @include fontSize(22, 700, 22);
+        @include fontSize(20, 900, 20);
         text-align: start;
         margin-bottom: 48px;
         &::before {

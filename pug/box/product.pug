@@ -3,5 +3,6 @@ mixin productBox(img, name, brand, link)
         a(href=link)  
             figure 
                 img.img(src=img, alt=name)
-                h3.name=name 
-                h4.brand=brand
+                .details
+                    h3.name=name 
+                    h4.brand=brand

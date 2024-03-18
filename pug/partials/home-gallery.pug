@@ -1,6 +1,9 @@
 section.section-home-gallery(data-aos="fade-down") 
     .container
-        h2.title گالری تصاویر
+        .title-section.d-flex.justify-content-between.align-items-center
+            h2.title گالری تصاویر
+            .more.my-4 
+                a.btn(href="#") مشاهده همه
         ul#myTab.nav.nav-tabs(role='tablist')
             li.nav-item(role='presentation')
                 button#all-tab.nav-link.active(data-bs-toggle='tab' data-bs-target='#all' type='button' role='tab' aria-controls='all' aria-selected='true') همه
@@ -12,7 +15,7 @@ section.section-home-gallery(data-aos="fade-down")
             #all.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='all-tab')
                 .row 
                     .col-lg-6
-                        a(href="assets/img/prod1.jpg" data-fancybox) 
+                        a(href="assets/img/prod1.jpg" data-fancybox="all") 
                             figure.gallery-img 
                                 img.img(src="assets/img/prod1.jpg" alt="prod1")
                                 .mask
@@ -21,28 +24,28 @@ section.section-home-gallery(data-aos="fade-down")
                     .col-lg-6
                         .row
                             .col-6 
-                                a(href="assets/img/prod2.jpg" data-fancybox) 
+                                a(href="assets/img/prod2.jpg" data-fancybox="all") 
                                     figure.gallery-img 
                                         img.img__small(src="assets/img/prod2.jpg" alt="prod1")
                                         .mask
                                             span کلیک کنید
                                             span.icon.icon-circle-caret-left
                             .col-6 
-                                a(href="assets/img/prod3.jpg" data-fancybox) 
+                                a(href="assets/img/prod3.jpg" data-fancybox="all") 
                                     figure.gallery-img 
                                         img.img__small(src="assets/img/prod3.jpg" alt="prod1")
                                         .mask
                                             span کلیک کنید
                                             span.icon.icon-circle-caret-left
                             .col-6 
-                                a(href="assets/img/prod4.jpg" data-fancybox) 
+                                a(href="assets/img/prod4.jpg" data-fancybox="all") 
                                     figure.gallery-img 
                                         img.img__small(src="assets/img/prod4.jpg" alt="prod1")
                                         .mask
                                             span کلیک کنید
                                             span.icon.icon-circle-caret-left
                             .col-6
-                                a(href="assets/img/prod5.jpg" data-fancybox) 
+                                a(href="assets/img/prod5.jpg" data-fancybox="all") 
                                     figure.gallery-img 
                                         img.img__small(src="assets/img/prod5.jpg" alt="prod1") 
                                         .mask
@@ -51,35 +54,35 @@ section.section-home-gallery(data-aos="fade-down")
                     .col-lg-6 
                         .row
                             .col-6 
-                                a(href="assets/img/collec1.jpg" data-fancybox) 
+                                a(href="assets/img/collec1.jpg" data-fancybox="all") 
                                     figure.gallery-img 
                                         img.img__small(src="assets/img/collec1.jpg" alt="prod1")
                                         .mask
                                             span کلیک کنید
                                             span.icon.icon-circle-caret-left
                             .col-6 
-                                a(href="assets/img/collec2.jpg" data-fancybox) 
+                                a(href="assets/img/collec2.jpg" data-fancybox="all") 
                                     figure.gallery-img 
                                         img.img__small(src="assets/img/collec2.jpg" alt="prod1")
                                         .mask
                                             span کلیک کنید
                                             span.icon.icon-circle-caret-left
                             .col-6 
-                                a(href="assets/img/collec3.jpg" data-fancybox) 
+                                a(href="assets/img/collec3.jpg" data-fancybox="all") 
                                     figure.gallery-img 
                                         img.img__small(src="assets/img/collec3.jpg" alt="prod1")
                                         .mask
                                             span کلیک کنید
                                             span.icon.icon-circle-caret-left
                             .col-6 
-                                a(href="assets/img/collec2.jpg" data-fancybox) 
+                                a(href="assets/img/collec2.jpg" data-fancybox="all") 
                                     figure.gallery-img 
                                         img.img__small(src="assets/img/collec2.jpg" alt="prod1")
                                         .mask
                                             span کلیک کنید
                                             span.icon.icon-circle-caret-left
                     .col-lg-6
-                        a(href="assets/img/collec1.jpg" data-fancybox) 
+                        a(href="assets/img/collec1.jpg" data-fancybox="all") 
                             figure.gallery-img 
                                 img.img(src="assets/img/collec1.jpg" alt="prod1")
                                 .mask
@@ -88,7 +91,7 @@ section.section-home-gallery(data-aos="fade-down")
             #bathroom.tab-pane.fade(role='tabpanel' aria-labelledby='bathroom-tab')
                 .row 
                     .col-lg-6
-                        a(href="assets/img/prod1.jpg" data-fancybox) 
+                        a(href="assets/img/prod1.jpg" data-fancybox="bathroom") 
                             figure.gallery-img 
                                 img.img(src="assets/img/prod1.jpg" alt="prod1")
                                 .mask
@@ -97,28 +100,28 @@ section.section-home-gallery(data-aos="fade-down")
                     .col-lg-6
                         .row
                             .col-6 
-                                a(href="assets/img/prod2.jpg" data-fancybox) 
+                                a(href="assets/img/prod2.jpg" data-fancybox="bathroom") 
                                     figure.gallery-img 
                                         img.img__small(src="assets/img/prod2.jpg" alt="prod1")
                                         .mask
                                             span کلیک کنید
                                             span.icon.icon-circle-caret-left
                             .col-6 
-                                a(href="assets/img/prod3.jpg" data-fancybox) 
+                                a(href="assets/img/prod3.jpg" data-fancybox="bathroom") 
                                     figure.gallery-img 
                                         img.img__small(src="assets/img/prod3.jpg" alt="prod1")
                                         .mask
                                             span کلیک کنید
                                             span.icon.icon-circle-caret-left
                             .col-6 
-                                a(href="assets/img/prod4.jpg" data-fancybox) 
+                                a(href="assets/img/prod4.jpg" data-fancybox="bathroom") 
                                     figure.gallery-img 
                                         img.img__small(src="assets/img/prod4.jpg" alt="prod1")
                                         .mask
                                             span کلیک کنید
                                             span.icon.icon-circle-caret-left
                             .col-6
-                                a(href="assets/img/prod5.jpg" data-fancybox) 
+                                a(href="assets/img/prod5.jpg" data-fancybox="bathroom") 
                                     figure.gallery-img 
                                         img.img__small(src="assets/img/prod5.jpg" alt="prod1") 
                                         .mask
@@ -127,35 +130,35 @@ section.section-home-gallery(data-aos="fade-down")
                     .col-lg-6 
                         .row
                             .col-6 
-                                a(href="assets/img/collec1.jpg" data-fancybox) 
+                                a(href="assets/img/collec1.jpg" data-fancybox="bathroom") 
                                     figure.gallery-img 
                                         img.img__small(src="assets/img/collec1.jpg" alt="prod1")
                                         .mask
                                             span کلیک کنید
                                             span.icon.icon-circle-caret-left
                             .col-6 
-                                a(href="assets/img/collec2.jpg" data-fancybox) 
+                                a(href="assets/img/collec2.jpg" data-fancybox="bathroom") 
                                     figure.gallery-img 
                                         img.img__small(src="assets/img/collec2.jpg" alt="prod1")
                                         .mask
                                             span کلیک کنید
                                             span.icon.icon-circle-caret-left
                             .col-6 
-                                a(href="assets/img/collec3.jpg" data-fancybox) 
+                                a(href="assets/img/collec3.jpg" data-fancybox="bathroom") 
                                     figure.gallery-img 
                                         img.img__small(src="assets/img/collec3.jpg" alt="prod1")
                                         .mask
                                             span کلیک کنید
                                             span.icon.icon-circle-caret-left
                             .col-6 
-                                a(href="assets/img/collec2.jpg" data-fancybox) 
+                                a(href="assets/img/collec2.jpg" data-fancybox="bathroom") 
                                     figure.gallery-img 
                                         img.img__small(src="assets/img/collec2.jpg" alt="prod1")
                                         .mask
                                             span کلیک کنید
                                             span.icon.icon-circle-caret-left
                     .col-lg-6
-                        a(href="assets/img/collec1.jpg" data-fancybox) 
+                        a(href="assets/img/collec1.jpg" data-fancybox="bathroom") 
                             figure.gallery-img 
                                 img.img(src="assets/img/collec1.jpg" alt="prod1")
                                 .mask
@@ -164,7 +167,7 @@ section.section-home-gallery(data-aos="fade-down")
             #kitchen.tab-pane.fade(role='tabpanel' aria-labelledby='kitchen-tab')
                 .row 
                     .col-lg-6
-                        a(href="assets/img/prod1.jpg" data-fancybox) 
+                        a(href="assets/img/prod1.jpg" data-fancybox="kitchen") 
                             figure.gallery-img 
                                 img.img(src="assets/img/prod1.jpg" alt="prod1")
                                 .mask
@@ -173,28 +176,28 @@ section.section-home-gallery(data-aos="fade-down")
                     .col-lg-6
                         .row
                             .col-6 
-                                a(href="assets/img/prod2.jpg" data-fancybox) 
+                                a(href="assets/img/prod2.jpg" data-fancybox="kitchen") 
                                     figure.gallery-img 
                                         img.img__small(src="assets/img/prod2.jpg" alt="prod1")
                                         .mask
                                             span کلیک کنید
                                             span.icon.icon-circle-caret-left
                             .col-6 
-                                a(href="assets/img/prod3.jpg" data-fancybox) 
+                                a(href="assets/img/prod3.jpg" data-fancybox="kitchen") 
                                     figure.gallery-img 
                                         img.img__small(src="assets/img/prod3.jpg" alt="prod1")
                                         .mask
                                             span کلیک کنید
                                             span.icon.icon-circle-caret-left
                             .col-6 
-                                a(href="assets/img/prod4.jpg" data-fancybox) 
+                                a(href="assets/img/prod4.jpg" data-fancybox="kitchen") 
                                     figure.gallery-img 
                                         img.img__small(src="assets/img/prod4.jpg" alt="prod1")
                                         .mask
                                             span کلیک کنید
                                             span.icon.icon-circle-caret-left
                             .col-6
-                                a(href="assets/img/prod5.jpg" data-fancybox) 
+                                a(href="assets/img/prod5.jpg" data-fancybox="kitchen") 
                                     figure.gallery-img 
                                         img.img__small(src="assets/img/prod5.jpg" alt="prod1") 
                                         .mask
@@ -203,39 +206,37 @@ section.section-home-gallery(data-aos="fade-down")
                     .col-lg-6 
                         .row
                             .col-6 
-                                a(href="assets/img/collec1.jpg" data-fancybox) 
+                                a(href="assets/img/collec1.jpg" data-fancybox="kitchen") 
                                     figure.gallery-img 
                                         img.img__small(src="assets/img/collec1.jpg" alt="prod1")
                                         .mask
                                             span کلیک کنید
                                             span.icon.icon-circle-caret-left
                             .col-6 
-                                a(href="assets/img/collec2.jpg" data-fancybox) 
+                                a(href="assets/img/collec2.jpg" data-fancybox="kitchen") 
                                     figure.gallery-img 
                                         img.img__small(src="assets/img/collec2.jpg" alt="prod1")
                                         .mask
                                             span کلیک کنید
                                             span.icon.icon-circle-caret-left
                             .col-6 
-                                a(href="assets/img/collec3.jpg" data-fancybox) 
+                                a(href="assets/img/collec3.jpg" data-fancybox="kitchen") 
                                     figure.gallery-img 
                                         img.img__small(src="assets/img/collec3.jpg" alt="prod1")
                                         .mask
                                             span کلیک کنید
                                             span.icon.icon-circle-caret-left
                             .col-6 
-                                a(href="assets/img/collec2.jpg" data-fancybox) 
+                                a(href="assets/img/collec2.jpg" data-fancybox="kitchen") 
                                     figure.gallery-img 
                                         img.img__small(src="assets/img/collec2.jpg" alt="prod1")
                                         .mask
                                             span کلیک کنید
                                             span.icon.icon-circle-caret-left
                     .col-lg-6
-                        a(href="assets/img/collec1.jpg" data-fancybox) 
+                        a(href="assets/img/collec1.jpg" data-fancybox="kitchen") 
                             figure.gallery-img 
                                 img.img(src="assets/img/collec1.jpg" alt="prod1")
                                 .mask
                                     span کلیک کنید
                                     span.icon.icon-circle-caret-left
-        .more.my-4.text-center  
-            a.btn(href="#") مشاهده همه

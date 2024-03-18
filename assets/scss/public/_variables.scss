@@ -16,26 +16,13 @@
 .btn-outline-custom {
   position: relative;
   display: inline-block;
-  border: 1px solid #ffffff80;
   padding: 12px 32px;
-  background: transparent;
+  background-color: #000;
   color: #fff;
-  &::before {
-    content: " ";
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    background: black;
-    opacity: 0;
-    transition: all 0.3s ease;
-  }
+  @extend .tr-300;
   &:hover {
-    &::before {
-      opacity: 0.1;
-      -webkit-filter: blur(4px);
-      filter: blur(4px);
-    }
+    background-color: #fff;
+    color: #000;
+    @extend .tr-300;
   }
 }
