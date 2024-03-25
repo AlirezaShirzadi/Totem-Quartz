@@ -1,47 +1,61 @@
 .product-box {
-  margin-bottom: 24px;
-  figure {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    .img {
-      width: 90%;
-      height: 261px;
-      object-fit: cover;
-      @extend .tr-300;
-    }
-    .details {
-      position: absolute;
-      padding: 16px;
-      bottom: -10px;
-      right: 50%;
-      transform: translateX(50%);
-      background-color: $secondary;
-      text-align: center;
-      @extend .tr-300;
-      .name {
-        text-wrap: nowrap;
-        color: #fff;
-        margin-bottom: 16px;
-        @include fontSize(18, 500, 18);
-      }
-      .brand {
-        text-wrap: nowrap;
-        color: #f7f7f780;
-        @include fontSize(16, 400, 16);
-      }
-    }
-    &:hover {
-      .details {
-        background-color: $main;
-        @extend .tr-300;
-        .name {
-          @extend .tr-300;
+    margin-bottom: 24px;
+    figure {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        .img {
+            width: 90%;
+            height: 261px;
+            object-fit: cover;
+            @extend .tr-300;
         }
-        .brand {
-          @extend .tr-300;
+        .details {
+            opacity: 0;
+            position: absolute;
+            width: 0;
+            height: 100%;
+            padding: 16px;
+            top: 0;
+            right: auto;
+            left: auto;
+            background-color: #04040460;
+            text-align: center;
+            @extend .tr-300;
+            .name {
+                position: relative;
+                text-wrap: nowrap;
+                color: #fff;
+                margin-bottom: 16px;
+                @include fontSize(18, 500, 18);
+                &::before {
+                  content: "";
+                  position: absolute;
+                  top: -300%;
+                  right: 50%;
+                  width: 2px;
+                  height: 40px;
+                  background-color: $main;
+                }
+            }
+            .brand {
+                text-wrap: nowrap;
+                color: #f7f7f7;
+                @include fontSize(16, 400, 16);
+            }
         }
-      }
+        &:hover {
+            .details {
+                opacity: 1;
+                width: 90%;
+                @extend .tr-300;
+                .name {
+                    @extend .tr-300;
+                }
+                .brand {
+                    @extend .tr-300;
+                }
+            }
+        }
     }
-  }
 }

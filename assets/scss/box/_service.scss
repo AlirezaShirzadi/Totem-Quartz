@@ -1,25 +1,23 @@
 .service-box {
     box-shadow: 0 4px 10px 0 rgba(0,0,0,.08);
     padding: 24px;
-    background-color: #fff;
+    background-color: $secondary;
     .icon {
+        display: inline-block;
+        background-color: #fff;
+        border-radius: 100%;
         color: $main;
         font-size: 32px;
+        padding: 22px;
     }
     .service-title {
+        color: #fff;
         @include fontSize(18, 700, 18);
         margin: 16px 0;
     }
     .desc {
         text-align: justify;
         @include fontSize(14, 400, 24);
-        color: #040404;
-    }
-    .link {
-        text-align: end;
-        a {
-            @include fontSize(14, 700, 24);
-            color: $main;
-        }
+        color: #f7f7f7;
     }
 }

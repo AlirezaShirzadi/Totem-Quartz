@@ -3,6 +3,6 @@ mixin productBox(img, name, brand, link)
         a(href=link)  
             figure 
                 img.img(src=img, alt=name)
-                .details
+                .details.d-flex.flex-column.justify-content-center.align-items-center
                     h3.name=name 
                     h4.brand=brand
