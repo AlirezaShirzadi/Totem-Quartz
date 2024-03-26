@@ -10660,8 +10660,8 @@ ul {
 }
 @font-face {
   font-family: "TQ";
-  src: url("../icon/TQ.eot?4963au");
-  src: url("../icon/TQ.eot?4963au#iefix") format("embedded-opentype"), url("../icon/TQ.ttf?4963au") format("truetype"), url("../icon/TQ.woff?4963au") format("woff"), url("../icon/TQ.svg?4963au#TQ") format("svg");
+  src: url("../icon/TQ.eot?r0pge8");
+  src: url("../icon/TQ.eot?r0pge8#iefix") format("embedded-opentype"), url("../icon/TQ.ttf?r0pge8") format("truetype"), url("../icon/TQ.woff?r0pge8") format("woff"), url("../icon/TQ.svg?r0pge8#TQ") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -10678,6 +10678,18 @@ ul {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+  content: "\e965";
+}
+
+.icon-whatsapp:before {
+  content: "\e966";
+}
+
+.icon-telegram:before {
+  content: "\e967";
 }
 
 .icon-instagram:before {
@@ -11406,16 +11418,34 @@ ul {
   }
 }
 .section-footer {
-  padding-top: 30px;
+  padding: 30px 0;
   margin-bottom: 1px;
   background-color: #323131;
 }
 .section-footer .menu-title {
+  position: relative;
   color: #fff;
   font-size: 18px;
   font-weight: 500;
   line-height: 18px;
   margin: 24px 0 16px;
+  padding-right: 39px;
+}
+.section-footer .menu-title::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 26px;
+  height: 3px;
+  background-color: #e9232c;
+}
+.section-footer .about-desc {
+  color: #fff;
+  text-align: justify;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
 }
 .section-footer ul {
   list-style: none;
@@ -11459,6 +11489,17 @@ ul {
   color: #c7c7c7;
   font-size: 14px;
   font-weight: 400;
+}
+.section-footer .info {
+  margin-bottom: 8px;
+}
+.section-footer .info .icon {
+  padding: 8px;
+  color: #e9232c;
+  background-color: #fff;
+  font-weight: bold;
+  border-radius: 100%;
+  margin-left: 8px;
 }
 
 .inc-info {

@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'TQ';
-  src:  url('../icon/TQ.eot?4963au');
-  src:  url('../icon/TQ.eot?4963au#iefix') format('embedded-opentype'),
-    url('../icon/TQ.ttf?4963au') format('truetype'),
-    url('../icon/TQ.woff?4963au') format('woff'),
-    url('../icon/TQ.svg?4963au#TQ') format('svg');
+  src:  url('../icon/TQ.eot?r0pge8');
+  src:  url('../icon/TQ.eot?r0pge8#iefix') format('embedded-opentype'),
+    url('../icon/TQ.ttf?r0pge8') format('truetype'),
+    url('../icon/TQ.woff?r0pge8') format('woff'),
+    url('../icon/TQ.svg?r0pge8#TQ') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-facebook:before {
+  content: "\e965";
+}
+.icon-whatsapp:before {
+  content: "\e966";
+}
+.icon-telegram:before {
+  content: "\e967";
+}
 .icon-instagram:before {
   content: "\e963";
 }
