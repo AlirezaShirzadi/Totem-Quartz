@@ -1,8 +1,39 @@
 header#main-header
-    nav.navbar.navbar-expand-lg.fixed-top
-        .container-fluid
-            a.navbar-brand.order-lg-0(href='#') 
+    .top-header.d-flex.align-items-center.justify-content-between
+        .corporate 
+            span.link CORPORATE
+                ul.menu 
+                    li.menu-item 
+                        a.menu-link(href="") اخبار 
+                    li.menu-item 
+                        a.menu-link(href="") درباره ما 
+                    li.menu-item 
+                        a.menu-link(href="") نمایشگاه ها 
+                    li.menu-item 
+                        a.menu-link(href="") همکاری با ما 
+            a.enter(href="#")  ورود نمایندگان
+        a.navbar-brand.order-lg-0(href='#') 
                 img.img(src="assets/img/logo.jpg" alt="")
+        .utilities.d-none.d-lg-flex.order-2
+                form.search-form.d-none.d-lg-flex.mt-3.mt-lg-0(role='search')
+                    input.form-control.search-input.me-2(type='search' placeholder='جست و جو ...' aria-label='Search')
+                    button.btn.btn-search.d-flex.align-items-center.justify-content-center.my-auto(type='button') 
+                        span.icon.icon-magnifying-glass
+                .lang-dropdown.my-auto
+                    a.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+                        | زبان
+                        span.icon.icon-chevron-down
+                    ul.dropdown-menu
+                        li
+                            a.dropdown-item(href='#') فارسی
+                        li
+                            a.dropdown-item(href='#') انگلیسی
+                        li
+                            a.dropdown-item(href='#') عربی
+                        li
+                            a.dropdown-item(href='#') روسی
+    nav.navbar.navbar-expand-lg.fixed-top
+        .container-fluid.justify-content-center
             button.navbar-toggler.order-lg-1(type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasNavbar' aria-controls='offcanvasNavbar' aria-label='Toggle navigation')
                 span.navbar-toggler-icon
             #offcanvasNavbar.offcanvas.offcanvas-end.order-lg-1(tabindex='-1' aria-labelledby='offcanvasNavbarLabel')
@@ -12,9 +43,7 @@ header#main-header
                 .offcanvas-body.align-items-center
                     ul.navbar-nav.justify-content-center.flex-grow-1.pe-3
                         li.nav-item
-                            a.nav-link.active(aria-current='page' href='#') صفحه اصلی
-                        li.nav-item
-                            a.nav-link(href='#') محصولات
+                            a.nav-link(href='#') پروژه ها
                         li.nav-item.dropdown
                             a.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
                                 | اخبار
@@ -24,52 +53,97 @@ header#main-header
                                     a.dropdown-item(href='#') امروز
                                 li
                                     a.dropdown-item(href='#') دیروز
+                        li.nav-item.dropdown
+                            a.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+                                | مجله ها
+                                span.icon.icon-chevron-down
+                            ul.dropdown-menu
+                                li
+                                    a.dropdown-item(href='#') کاتالوگ ها
+                                li
+                                    a.dropdown-item(href='#') گواهی نامه ها و استاندارد ها
+                                li
+                                    a.dropdown-item(href='#') جوایز و افتخارات
+                                li
+                                    a.dropdown-item(href='#') ویدیو های آموزشی
+                                li
+                                    a.dropdown-item(href='#') دستورالعمل های نگهداری
+                                li
+                                    a.dropdown-item(href='#') اطلاعات فنی
                         li.nav-item.dropdown-full-size
                             a.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
                                 | انواع محصولات
                                 span.icon.icon-chevron-down
                             ul.dropdown-menu
                                 .row 
-                                    .col-lg-3.text-start
+                                    .col-lg-4.text-start
                                         span.icon.icon-caret-down
-                                        h3.title کوارتز
+                                        h3.title رنگ
                                         li
-                                            a.dropdown-item(href='#') کوارتز
+                                            a.dropdown-item(href='#') کرم
                                         li
-                                            a.dropdown-item(href='#') معدن
+                                            a.dropdown-item(href='#') بژ
                                         li
-                                            a.dropdown-item(href='#') کوه
-                                    .col-lg-3.text-start
+                                            a.dropdown-item(href='#') سفید
+                                        li
+                                            a.dropdown-item(href='#') مشکی
+                                    .col-lg-4.text-start
                                         span.icon.icon-caret-down
-                                        h3.title معدن
+                                        h3.title گروه محصول
                                         li
-                                            a.dropdown-item(href='#') کوارتز
+                                            a.dropdown-item(href='#') آینه دار
                                         li
-                                            a.dropdown-item(href='#') معدن
+                                            a.dropdown-item(href='#') ساده
                                         li
-                                            a.dropdown-item(href='#') کوه
+                                            a.dropdown-item(href='#') ابرو بادی
                                         li
-                                            a.dropdown-item(href='#') کوارتز
-                                        li
-                                            a.dropdown-item(href='#') معدن
-                                        li
-                                            a.dropdown-item(href='#') کوه
-                                    .col-lg-3.text-start
+                                            a.dropdown-item(href='#') کلکته
+                                    .col-lg-4.text-start
                                         span.icon.icon-caret-down
-                                        h3.title کوه
+                                        h3.title کاربری
                                         li
-                                            a.dropdown-item(href='#') کوارتز
+                                            a.dropdown-item(href='#') آشپزخانه
                                         li
-                                            a.dropdown-item(href='#') معدن
-                                    .col-lg-3.text-start
+                                            a.dropdown-item(href='#') سرویس بهداشتی
+                                        li
+                                            a.dropdown-item(href='#') کف 
+                        li.nav-item.dropdown-full-size
+                            a.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+                                | نمایندگان
+                                span.icon.icon-chevron-down
+                            ul.dropdown-menu
+                                .row 
+                                    .col-lg-4.text-start
                                         span.icon.icon-caret-down
-                                        h3.title کوارتز
+                                        h3.title تهران
                                         li
-                                            a.dropdown-item(href='#') کوارتز
+                                            a.dropdown-item(href='#') نمایندگی 1
                                         li
-                                            a.dropdown-item(href='#') معدن
+                                            a.dropdown-item(href='#') نمیاندگی 2
                                         li
-                                            a.dropdown-item(href='#') کوه
+                                            a.dropdown-item(href='#') نمایندگی 3
+                                        li
+                                            a.dropdown-item(href='#') نمایندگی 4
+                                    .col-lg-4.text-start
+                                        span.icon.icon-caret-down
+                                        h3.title اصفهان
+                                        li
+                                            a.dropdown-item(href='#') نمایندگی 1
+                                        li
+                                            a.dropdown-item(href='#') نمیاندگی 2
+                                        li
+                                            a.dropdown-item(href='#') نمایندگی 3
+                                        li
+                                            a.dropdown-item(href='#') نمایندگی 4
+                                    .col-lg-4.text-start
+                                        span.icon.icon-caret-down
+                                        h3.title کاشان
+                                        li
+                                            a.dropdown-item(href='#') نمایندگی 1
+                                        li
+                                            a.dropdown-item(href='#') نمایندگی 2
+                                        li
+                                            a.dropdown-item(href='#') نمایندگی 3 
                         li.nav-item.dropdown-full-size
                             a.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
                                 | برند ها
@@ -88,22 +162,4 @@ header#main-header
                                         a.d-flex.flex-column.align-items-center(href="#")
                                             img.logo-img(src="assets/img/brand3.png", alt="") 
                                             span.title کوه
-            .utilities.d-none.d-lg-flex.order-2
-                form.search-form.d-none.d-lg-flex.mt-3.mt-lg-0(role='search')
-                    input.form-control.search-input.me-2(type='search' placeholder='جست و جو ...' aria-label='Search')
-                    button.btn.btn-search.d-flex.align-items-center.justify-content-center.my-auto(type='button') 
-                        span.icon.icon-magnifying-glass
-                .lang-dropdown.my-auto
-                    a.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
-                        | زبان
-                        span.icon.icon-chevron-down
-                    ul.dropdown-menu
-                        li
-                            a.dropdown-item(href='#') فارسی
-                        li
-                            a.dropdown-item(href='#') انگلیسی
-                        li
-                            a.dropdown-item(href='#') عربی
-                        li
-                            a.dropdown-item(href='#') روسی
 
